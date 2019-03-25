@@ -89,6 +89,11 @@
       .btn {
         .custom-btn (100px, 2rem);
 
+        &:hover {
+          background-color: @hover;
+          color: @btn-bg-color;
+        }
+
         @media @phone {
           .custom-btn (100%,1.7rem);
           padding: 20px 15px;
