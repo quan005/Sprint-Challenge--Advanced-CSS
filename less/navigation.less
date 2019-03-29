@@ -1,1 +1,44 @@
 // Navigation code here
+
+section.nav {
+
+  div.header-container {
+    .center;
+    background-color: @wild-sand;
+    border-bottom: 2px solid @sea-shell;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 0;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      .custom-layout(space-around, center);
+      width: 26%;
+
+      @media @phone {
+        .custom-layout(space-between, center);
+        width: 80%
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: @river-bend;
+
+        &:hover {
+          color: @hover;
+        }
+
+        @media @phone {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
